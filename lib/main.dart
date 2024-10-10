@@ -30,44 +30,50 @@ class BizzCard extends StatelessWidget {
     return const Center(
         child: Card(
       margin: EdgeInsets.all(20),
-      color: Colors.blueGrey,
+      color: Colors.blueAccent,
       elevation: 8,
-      shadowColor: Colors.red,
-      child: Padding(
-        padding: EdgeInsets.all(60.0),
-        child: Column(
-          children: [
-            CircleAvatar(
-              radius: 50,
-              backgroundImage: AssetImage('../assets/pp.webp'),
-            ),
-            SizedBox(height: 30),
-            Text(
-              "Yaye Fatou Diop",
-              style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
+      shadowColor: Colors.black,
+      child: SizedBox(
+        height: 400,
+        child: Padding(
+          padding: EdgeInsets.all(30.0),
+          child: Column(
+            children: [
+              CircleAvatar(
+                radius: 75,
+                backgroundImage: AssetImage('../assets/pp.webp'),
               ),
-            ),
-            Text(
-              "24 years old",
-              style: TextStyle(
-                fontSize: 20,
+              SizedBox(height: 30),
+              Text(
+                "Yaye Fatou Diop",
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
-            Text(
-              "yayefatoudiop2000@gmail.com",
-              style: TextStyle(
-                fontSize: 20,
+              SizedBox(height: 10),
+              Text(
+                "64 years old",
+                style: TextStyle(
+                  fontSize: 20,
+                ),
               ),
-            ),
-            Text(
-              "+221 78 156 23 49",
-              style: TextStyle(
-                fontSize: 20,
+              SizedBox(height: 10),
+              Text(
+                "yaye.fatou_diop0000@gmail.com",
+                style: TextStyle(
+                  fontSize: 20,
+                ),
               ),
-            ),
-          ],
+              SizedBox(height: 10),
+              Text(
+                "+221 78 156 23 49",
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     ));
