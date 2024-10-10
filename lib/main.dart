@@ -15,7 +15,14 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         home: Scaffold(
           appBar: AppBar(
-            title: const Text('BizzCard'),
+            title: const Text(
+              'BizzCard',
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
             backgroundColor: Colors.blueAccent,
           ),
           body: const BizzCard(),
